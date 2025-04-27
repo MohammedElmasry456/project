@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item:hover {
+  background-color: #f8f9fa;
+}
+
+.search-dropdown {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.filter-section {
+  transition: all 0.3s ease;
+}
+
+.auth-modal,
+.product-modal {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-gallery-thumbnail {
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.product-gallery-thumbnail:hover,
+.product-gallery-thumbnail.active {
+  border-color: #3b82f6;
+}
